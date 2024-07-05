@@ -36,7 +36,7 @@ const DepartmentList: React.FC = () => {
     const updatedSelected = { ...selected, [subDepartment]: isSelected };
 
     const parentDepartment = departments.find((dept) => dept.department === department);
-    const allSelected = parentDepartment?.sub_departments.every((sub) => updatedSelected[sub]);
+    const allSelected = parentDepartment?.sub_departments.every((sub) => updatedSelected[sub]) || false;
 
     updatedSelected[department] = allSelected;
 
