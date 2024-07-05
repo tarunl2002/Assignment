@@ -2,7 +2,7 @@ import { Department } from '../types/Department';
 
 export const departments: Department[] = [
   {
-    department: "customer_service",
+    department: "Agriculture & Fishing",
     sub_departments: [
       "support",
       "customer_success"
